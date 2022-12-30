@@ -1,0 +1,787 @@
+@media (max-width: 1199px) {
+	.navbar__list {
+		display: none;
+	}
+
+	.wrapper {
+		overflow: hidden;
+	}
+
+	.nav__mobile {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 99;
+		background-color: white;
+		flex-direction: column;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		align-items: center;
+	}
+
+	.nav__mobile .navbar__list {
+		display: block;
+		position: relative;
+		top: 200px;
+	}
+
+	.nav__mobile .navbar__item a {
+		font-size: 40px;
+		line-height: 2;
+	}
+
+	.nav__mobile .nav__toggle {
+		position: relative;
+		bottom: 260px;
+		left: 540px;
+	}
+
+	.nav__mobile .header-logo__image {
+		position: relative;
+		bottom: 17px;
+	}
+}
+
+@media (min-width: 1199px) {
+	.nav__toggle {
+		display: none;
+	}
+}
+
+@media (max-width: 769px) {
+	.wrapper {
+		overflow: hidden;
+	}
+
+	.block-1 {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.block-1__image img {
+		width: 1100px;
+		height: 820px;
+	}
+
+	.block-1__content {
+		text-align: center;
+	}
+
+	.block-1__content__illustration {
+		font-size: 20px;
+	}
+
+	.block-1__content__title {
+		font-size: 45px;
+		width: 100%;
+	}
+
+	.block-1__content_text {
+		font-size: 30px;
+	}
+
+	.block-1__content__name {
+		font-size: 20px;
+	}
+
+	.block-2 {
+		flex-wrap: wrap;
+		column-gap: 5px;
+	}
+
+	.col-1__new-york__image img {
+		width: 570px;
+		height: 371px;
+	}
+
+	.col-1__new-york__inner {
+		text-align: center;
+	}
+
+	.col-1__new-york__photography p {
+		font-size: 20px;
+	}
+
+	.col-1__new-york__text a {
+		font-size: 25px;
+	}	
+
+	.col-1__new-york__name a {
+		font-size: 15px;
+	}
+
+	.col-2__food__image img {
+		width: 570px;
+		height: 371px;
+	}
+
+	.col-2__food__inner {
+		text-align: center;
+	}
+
+	.col-2__food__photography p {
+		font-size: 20px;
+	}
+
+	.col-2__food__text a {
+		font-size: 25px;
+	}
+
+	.col-2__food__name a {
+		font-size: 15px;
+	}
+
+	.col-1__abs__image img {
+		width: 570px;
+		height: 371px;
+	}
+
+	.col-1__abs__inner {
+		text-align: center;
+	}	
+
+	.col-1__abs__interactive p {
+		font-size: 20px;
+	}
+
+	.col-1__abs__text {
+		width: 450px;
+		position: relative;
+		left: 53px;
+	}
+
+	.col-1__abs__text a {
+		font-size: 25px;
+	}
+
+	.col-1__abs__name a {
+		font-size: 15px;
+	}
+
+	.col-2__human__image img {
+		width: 570px;
+		height: 371px;
+	}
+
+	.col-2__human__inner {
+		text-align: center;
+	}
+
+	.col-2__human__graphic p {
+		font-size: 20px;
+	}
+
+	.col-2__human__text {
+		width: 550px;
+		position: relative;
+		left: 10px;
+	}
+
+	.col-2__human__text a {
+		font-size: 25px;
+	}
+
+	.col-2__human__name a {
+		font-size: 15px;
+	}
+
+	.block-2__col-3 {
+		position: relative;
+		margin-top: 40px;
+	}
+	
+	.col-3__mount__image img {
+		width: 570px;
+		height: 371px; 
+	}
+
+	.col-3__mount__inner {
+		text-align: center;
+	}
+
+	.col-3__mount__photography {
+		position: relative;
+		right: 5px;
+	}
+
+	.col-3__mount__photography p {
+		font-size: 20px;
+	}
+
+	.col-3__mount__text {
+		width: 550px;
+	}
+
+	.col-3__mount__text a {
+		font-size: 25px;
+	}
+
+	.col-3__mount__name {
+		position: relative;
+		right: 5px;
+	}
+
+	.col-3__mount__name a {
+		font-size: 15px;
+	}
+
+	.col-3__snow {
+		position: absolute;
+		bottom: 17px;
+		left: 577px;
+	}
+
+	.col-3__snow__image img {
+		width: 560px;
+		height: 381px;
+	}
+
+	.col-3__snow__inner {
+		text-align: center;
+	}
+
+	.col-3__snow__architecture p {
+		font-size: 20px;
+	}
+
+	.col-3__snow__text {
+		width: 550px;
+	}
+
+	.col-3__snow__text a {
+		font-size: 25px;
+	}
+
+	.col-3__snow__name a {
+		font-size: 15px;
+	}
+
+	.block-4__content {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.block-4__title p {
+		font-size: 20px;
+	}
+
+	.col-1__football__image img {
+		width: 1100px;
+		height: 820px;
+	}
+
+	.col-1__football__inner {
+		text-align: center;
+	}
+
+	.col-1__football__graphic p {
+		font-size: 25px;
+	}
+
+	.col-1__football__text {
+		margin-top: 40px;
+	}
+
+	.col-1__football__text a {
+		font-size: 40px;
+	}
+
+	.col-1__football__name {
+		margin-top: 20px;
+	}
+
+	.col-1__football__name a {
+		font-size: 15px;
+	}
+
+	.col-2__ocean__image img {
+		width: 1100px;
+		height: 820px;
+	}
+
+	.col-2__ocean__inner {
+		text-align: center;
+	}
+
+	.col-2__ocean__photography p {
+		font-size: 25px;
+	}
+
+	.col-2__ocean__text {
+		margin-top: 40px;
+	}
+
+	.col-2__ocean__text a {
+		font-size: 35px;
+	}
+
+	.col-2__ocean__name {
+		margin-top: 20px;
+	}
+
+	.col-2__ocean__name a {
+		font-size: 15px;
+	}
+
+	.col-2__water__image img {
+		width: 1100px;
+		height: 820px;
+	}
+
+	.col-2__water__inner {
+		text-align: center;
+	}
+
+	.col-2__water__graphic p {
+		font-size: 25px;
+	}
+
+	.col-2__water__text {
+		margin-top: 40px;
+	}
+
+	.col-2__water__text {
+		width: 1050px;
+		line-height: 2;
+	}
+
+	.col-2__water__text a {
+		font-size: 30px;
+	}
+
+	.col-2__water__name {
+		margin-top: 20px;
+	}
+
+	.col-2__water__name a {
+		font-size: 15px;
+	}
+
+	.col-2__ship__image img {
+		width: 1100px;
+		height: 820px;
+	}
+
+	.col-2__ship__inner {
+		text-align: center;
+	}
+
+	.col-2__ship__illustration p {
+		font-size: 25px;
+	}
+
+	.col-2__ship__text {
+		margin-top: 40px;
+	}
+
+	.col-2__ship__text {
+		width: 1050px;
+		line-height: 3;
+	}
+
+	.col-2__ship__text a {
+		font-size: 40px;
+	}
+
+	.col-2__ship__name {
+		margin-top: 20px;
+	}
+
+	.col-2__ship__name a {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 425px) {
+	.block-3__title {
+		margin-bottom: 50px;
+	}
+
+	.block-3__title p {
+		font-size: 30px;
+	}
+
+	.block-3__content {
+		flex-wrap: wrap;
+	}
+
+	.block-3__col-1 {
+		text-align: center;
+		position: relative;
+		left: 85px;
+	}
+
+	.block-3__col-2 {
+		text-align: center;
+		margin-top: 60px;
+		position: relative;
+		left: 85px;
+	}
+
+	.block-3__col-3 {
+		text-align: center;
+		margin-top: 60px;
+		position: relative;
+		left: 85px;
+	}
+
+	.block-3__col-4 {
+		text-align: center;
+		margin-top: 60px;
+		position: relative;
+		left: 85px;
+	}
+
+	.col-1__japan__image img {
+		width: 997.5px;
+		height: 654.5px;
+		margin-bottom: 30px;
+	}
+
+	.col-1__japan__inner {
+		text-align: center;
+	}
+
+	.col-1__japan__illustration p {
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+
+	.col-1__japan__text a {
+		font-size: 35px;
+		margin-bottom: 30px;
+		line-height: 1;
+	}
+
+	.col-1__japan__name {
+		margin-top: 30px;
+	}
+
+	.col-1__japan__name a {
+		font-size: 30px;
+	}
+
+	.col-1__abs__2__image img {
+		width: 997.5px;
+		height: 654.5px;
+		margin-bottom: 30px;
+	}
+
+	.col-1__abs__2__inner {
+		text-align: center;
+	}
+
+	.col-1__abs__2__interactive {	
+		margin-top: 30px;
+	}
+
+	.col-1__abs__2__interactive p {
+		font-size: 40px;
+	}
+
+	.col-1__abs__2__text {
+		margin-top: 30px;
+		width: 1000px;
+	}
+
+	.col-1__abs__2__text a {
+		font-size: 35px;
+		line-height: 1;
+	}
+
+	.col-1__abs__2__name {
+		margin-top: 30px;
+	}
+
+	.col-1__abs__2__name a {
+		font-size: 30px;
+	}
+
+	.col-2__new-york__image img {
+		width: 997.5px;
+		height: 654.5px;
+	}
+
+	.col-2__new-york__inner {
+		text-align: center;
+	}
+
+	.col-2__new-york__photography {
+		margin-top: 30px;
+	}
+
+	.col-2__new-york__photography p {
+		font-size: 40px;
+	}
+
+	.col-2__new-york__text {
+		margin-top: 30px;
+	}
+
+	.col-2__new-york__text a {
+		font-size: 35px;	
+		line-height: 1;
+	}
+
+	.col-2__new-york__name {
+		margin-top: 30px;
+	}
+
+	.col-2__new-york__name a {
+		font-size: 30px;
+	}
+
+	.col-2__human__2__image img {
+		width: 997.5px;
+		height: 654.5px;
+	}
+
+	.col-2__human__2__inner {
+		text-align: center;
+	}
+
+	.col-2__human__2__graphic {
+		margin-top: 30px;
+	}
+
+	.col-2__human__2__graphic p {
+		font-size: 40px;
+	}
+
+	.col-2__human__2__text {
+		margin-top: 30px;
+		width: 1000px;
+	}
+
+	.col-2__human__2__text a {
+		font-size: 35px;	
+		line-height: 1;
+	}
+
+	.col-2__human__2__name {
+		margin-top: 30px;
+	}
+
+	.col-2__human__2__name a {
+		font-size: 30px;
+	}
+
+	.col-3__food__image img {
+		width: 997.5px;
+		height: 654.5px;
+	}
+
+	.col-3__food__inner {
+		text-align: center;
+	}
+
+	.col-3__food__photography {
+		margin-top: 30px;
+	}
+
+	.col-3__food__photography p {
+		font-size: 40px;
+	}
+
+	.col-3__food__text {
+		margin-top: 30px;
+		width: 1000px;
+	}
+
+	.col-3__food__text a {
+		font-size: 30px;
+		line-height: 1;
+	}
+
+	.col-3__food__name {
+		margin-top: 30px;
+	}
+
+	.col-3__food__name a {
+		font-size: 30px;
+	}
+
+	.col-3__snow__2__image img {
+		width: 997.5px;
+		height: 654.5px;
+	}
+
+	.col-3__snow__2__inner {
+		text-align: center;
+	}
+
+	.col-3__snow__2__archtecture {
+		margin-top: 30px;
+	}
+
+	.col-3__snow__2__archtecture p {
+		font-size: 40px;
+	}
+
+	.col-3__snow__2__text {
+		margin-top: 30px;
+		width: 1000px;
+	}
+
+	.col-3__snow__2__text a {
+		font-size: 30px;
+		line-height: 1;
+	}
+
+	.col-3__snow__2__name {
+		margin-top: 30px;
+	}
+
+	.col-3__snow__2__name a {
+		font-size: 30px;
+	}
+
+	.col-4__mount__image img {
+		width: 997.5px;
+		height: 654.5px;
+	}
+
+	.col-4__mount__inner {
+		text-align: center;
+	}
+
+	.col-4__mount_photography {
+		margin-top: 30px;
+	}
+
+	.col-4__mount_photography p {
+		font-size: 40px;
+	}
+
+	.col-4__mount__text {
+		margin-top: 30px;
+		width: 1000px;
+	}
+
+	.col-4__mount__text a {
+		font-size: 30px;
+		line-height: 1;
+	}
+
+	.col-4__mount__name {
+		margin-top: 30px;
+	}
+
+	.col-4__mount__name a {
+		font-size: 30px;
+	}
+
+	.col-4__build__image img {
+		width: 997.5px;
+		height: 654.5px;
+	}
+
+	.col-4__build__inner {
+		text-align: center;
+	}
+
+	.col-4__build__graphic {
+		margin-top: 30px;
+	}
+
+	.col-4__build__graphic p {
+		font-size: 40px;
+	}
+
+	.col-4__build__text {
+		margin-top: 30px;
+		width: 1000px;
+	}
+
+	.col-4__build__text a {
+		font-size: 30px;
+		line-height: 1;
+	}
+
+	.col-4__build__name {
+		margin-top: 30px;
+	}
+
+	.col-4__build__name a {
+		font-size: 30px;
+	}
+
+	.button-view__btn {
+		width: 717.5px;
+		height: 189px;
+	}
+
+	.button-view__text {
+		font-size: 30px;
+	}
+
+	.footer-root {
+
+	}
+
+	.footer-root__logo img {
+		width: 404px;
+		height: 51px;
+	}
+
+	.footer-root__reserved p {
+		font-size: 25px;
+	}
+
+	.footer-nav__list-1 {
+		display: none;
+	}
+
+	.footer-nav__list-2 {
+		display: none;
+	}
+
+	.footer-nav__list-3 {
+		padding-bottom: 129px;
+	}
+
+	.footer-form__input__inner {
+		width: 442px;
+		height: 96px;
+	}
+
+	::placeholder {
+		font-size: 20px;
+	}
+
+	.footer-form__input__button {
+		width: 158px;
+		height: 96px;
+	}
+
+	.footer-form__input__button span {
+		font-size: 20px;
+		position: relative;
+		top: -10px;
+		left: 30px;
+	}
+
+	.footer-nav__list-3__col .list-3__item {
+		font-size: 21px;
+	}
+
+	.footer-nav__list-3__col .list-3__item__h {
+		font-size: 25px;
+	}
+
+	.footer-nav__list-4 .list-4__item {
+		font-size: 21px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
