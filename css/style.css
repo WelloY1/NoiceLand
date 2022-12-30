@@ -1,0 +1,1518 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Source+Sans+Pro&family=Tenor+Sans&display=swap');
+
+body {
+	min-width: 1200px;
+}
+
+.wrapper {
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1201px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.header {
+	border-bottom: 1px solid #E6E6E6;
+	padding-bottom: 36px;
+}
+
+.all-header {
+	padding-top: 37px;
+	display: flex;
+}
+
+.header-logo__image {
+	margin-right: 830px;
+}
+
+.navbar__list {
+	display: flex;
+	column-gap: 40px;
+}
+
+.navbar-item {
+	position: relative;
+}
+
+.navbar__item a {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+	position: relative;
+	display: inline-block;
+}
+
+.navbar__item a:hover {
+	color: #0095b6;
+}
+
+.navbar__item a::after {
+	content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #0095b6;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.navbar__item a:hover::after {
+	width: 100%;
+	left: 0;
+	color: red;
+}
+
+.nav__toggle {
+	background-color: white;
+	position: relative;
+	left: 170px;
+}
+
+.menu-icon-wrapper {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon {
+  position: relative;
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+}
+
+.menu-icon::before {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+}
+
+.menu-icon::after {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+}
+
+.menu-icon.menu-icon-active {
+  background-color: transparent;
+}
+
+.menu-icon.menu-icon-active::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+
+.all-main {
+	margin-top: 59px;
+}
+
+.block-1 {
+	display: flex; 
+	column-gap: 51px;
+}
+
+.block-1__content__illustration {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.block-1__content__title {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	color: #000000;
+	margin-top: 18px;
+}
+
+.block-1__content_text {
+	font-family: 'Source Serif Pro';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #666666;
+	margin-top: 27px;
+}
+
+.block-1__content__name {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+	margin-top: 28px;
+}
+
+.block-2 {
+	margin-top: 60px;
+	display: flex;
+	column-gap: 20px;
+	border-bottom: 1px solid #E6E6E6;
+	padding-bottom: 90px;
+}
+
+.col-1__new-york__photography {
+	margin-top: 24px;
+}
+
+.col-1__new-york__photography p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-1__new-york__text {
+	margin-top: 18px;
+}
+
+.col-1__new-york__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+  text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-1__new-york__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-1__new-york__name {
+	margin-top: 15px;
+}
+
+.col-1__new-york__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-1__abs {
+	margin-top: 74px;
+}
+
+.col-1__abs__interactive {
+	margin-top: 25px;
+}
+
+.col-1__abs__interactive p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-1__abs__text {
+	margin-top: 18px;
+}
+
+.col-1__abs__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-1__abs__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-1__abs__name {
+	margin-top: 15px;
+}
+
+.col-1__abs__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-2__food__photography {
+	margin-top: 24px;
+}
+
+.col-2__food__photography p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-2__food__text {
+	margin-top: 18px;
+}
+
+.col-2__food__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-2__food__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-2__food__name {
+	margin-top: 15px;
+}
+
+.col-2__food__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-2__human {
+	margin-top: 74px;
+}
+
+.col-2__human__graphic {
+	margin-top: 25px;
+}
+
+.col-2__human__graphic p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-2__human__text {
+	margin-top: 18px;
+}
+
+.col-2__human__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-2__human__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-2__human__name {
+	margin-top: 15px;
+}
+
+.col-2__human__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-3__mount__photography {
+	margin-top: 24px;
+}
+
+.col-3__mount__photography p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-3__mount__text {
+	margin-top: 18px;
+}
+
+.col-3__mount__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-3__mount__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-3__mount__name {
+	margin-top: 15px;
+}
+
+.col-3__mount__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-3__snow {
+	margin-top: 50px;
+}
+
+.col-3__snow__architecture {
+	margin-top: 25px;
+}
+
+.col-3__snow__architecture p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-3__snow__text {
+	margin-top: 18px;
+}
+
+.col-3__snow__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+ 	background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-3__snow__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-3__snow__name {
+	margin-top: 15px;
+}
+
+.col-3__snow__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.block-3 {
+	margin-top: 90px;
+}
+
+.block-3__title p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;	
+	color: #999999;
+}
+
+.block-3__content {
+	margin-top: 30px;
+	display: flex;
+	column-gap: 20px;
+}
+
+.col-1__japan__illustration {
+	margin-top: 25px;
+}
+
+.col-1__japan__illustration p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-1__japan__text {
+	margin-top: 18px;
+}
+
+.col-1__japan__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-1__japan__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-1__japan__name {
+	margin-top: 15px;
+}
+
+.col-1__japan__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;	
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-1__abs__2 {
+	margin-top: 98px;
+}
+
+.col-1__abs__2__interactive {
+	margin-top: 25px;
+}
+
+.col-1__abs__2__interactive p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-1__abs__2__text {
+	margin-top: 18px;
+}
+
+.col-1__abs__2__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+ 	background:  no-repeat 0 100%;
+ 	background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-1__abs__2__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-1__abs__2__name {
+	margin-top: 15px;
+}
+
+.col-1__abs__2__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;	
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-2__new-york__photography {
+	margin-top: 25px;
+}
+
+.col-2__new-york__photography p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-2__new-york__text {
+	margin-top: 18px;
+}
+
+.col-2__new-york__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-2__new-york__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-2__new-york__name {
+	margin-top: 15px;
+}
+
+.col-2__new-york__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;	
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-2__human__2 {
+	margin-top: 74px;
+}
+
+.col-2__human__2__graphic {
+	margin-top: 25px;
+}
+
+.col-2__human__2__graphic p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-2__human__2__text {
+	margin-top: 18px;
+}
+
+.col-2__human__2__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-2__human__2__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-2__human__2__name {
+	margin-top: 15px;
+}
+
+.col-2__human__2__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;	
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-3__food__photography {
+	margin-top: 25px;
+}
+
+.col-3__food__photography p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-3__food__text {
+	margin-top: 18px;
+}
+
+.col-3__food__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-3__food__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-3__food__name {
+	margin-top: 18px;
+}
+
+.col-3__food__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;	
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-3__snow__2 {
+	margin-top: 74px;
+}
+
+.col-3__snow__2__archtecture {
+	margin-top: 25px;
+}
+
+.col-3__snow__2__archtecture p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-3__snow__2__text {
+	margin-top: 18px;
+}
+
+.col-3__snow__2__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-3__snow__2__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-3__snow__2__name {
+	margin-top: 15px;
+}
+
+.col-3__snow__2__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;	
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-4__mount_photography {
+	margin-top: 25px;
+}
+
+.col-4__mount_photography p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-4__mount__text {
+	margin-top: 18px;
+}
+
+.col-4__mount__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-4__mount__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-4__mount__name {
+	margin-top: 15px;
+}
+
+.col-4__mount__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;	
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-4__build {
+	margin-top: 52px;
+}
+
+.col-4__build__graphic {
+	margin-top: 25px;
+}
+
+.col-4__build__graphic p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-4__build__text {
+	margin-top: 18px;
+}
+
+.col-4__build__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-4__build__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-4__build__name {
+	margin-top: 15px;
+}
+
+.col-4__build__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;	
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.button {
+	margin-top: 90px;
+	text-align: center;
+	border-bottom: 1px solid #E6E6E6;
+	padding-bottom: 90px;
+}
+
+.button-view__btn {
+	background: #000000;
+  color: #FFFFFF;  	
+  border: 0;
+ 	font-size: 18px;
+ 	border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+	width: 205px;
+	height: 54px;
+}
+	
+.button-view__btn:focus {
+	outline: 0;
+}
+
+.button-view__btn:before {
+	content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255,255,255,0.5);
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5;
+	filter: blur(30px);
+  transform: translateX(-100px)  skewX(-15deg);
+}
+
+.button-view__btn::after {
+	content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255,255,255,0.2);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+
+.button-view__btn:hover {
+	background: #0095b6;
+  cursor: pointer;
+}
+
+.button-view__btn:hover::before {
+	transform: translateX(300px)  skewX(-15deg);  
+  opacity: 0.6;
+  transition: .7s;
+}
+
+.button-view__btn:hover::after {
+	transform: translateX(300px) skewX(-15deg);  
+  opacity: 1;
+  transition: .7s;
+}
+
+.button-view__text {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.block-4 {
+	margin-top: 90px;
+}
+
+.block-4__title p {
+	font-family: 'Libre Franklin';	
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.block-4__content {
+	display: flex;
+	margin-top: 30px;
+	column-gap: 20px;
+}
+
+.col-1__football__graphic {
+	margin-top: 25px;
+}
+
+.col-1__football__graphic p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-1__football__text {
+	margin-top: 18px;
+}
+
+.col-1__football__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+ 	background:  no-repeat 0 100%;
+ 	background-image: linear-gradient(currentColor, currentColor);  	
+ 	background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-1__football__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-1__football__name {
+	margin-top: 15px;
+}
+
+.col-1__football__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-2__ocean {
+	margin-top: 74px;
+}
+
+.col-2__ocean__photography {
+	margin-top: 25px;
+}
+
+.col-2__ocean__photography p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-2__ocean__text {
+	margin-top: 18px;
+}
+
+.col-2__ocean__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-2__ocean__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-2__ocean__name {
+	margin-top: 15px;
+}
+
+.col-2__ocean__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-2__water__graphic {
+	margin-top: 25px;
+}
+
+.col-2__water__graphic p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-2__water__text {
+	margin-top: 18px;
+}
+
+.col-2__water__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-2__water__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-2__water__name {
+	margin-top: 15px;
+}
+
+.col-2__water__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.col-2__ship {
+	margin-top: 50px;
+}
+
+.col-2__ship__illustration {
+	margin-top: 25px;
+}
+
+.col-2__ship__illustration p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.col-2__ship__text {
+	margin-top: 18px;
+}
+
+.col-2__ship__text a {
+	font-family: 'Tenor Sans';
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+ 	background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  transition: background-size .3s ease;
+}
+
+.col-2__ship__text a:hover, a:focus {
+	background-size: 100% 1.5px;
+	color: #0095b6;
+}
+
+.col-2__ship__name {
+	margin-top: 15px;
+}
+
+.col-2__ship__name a {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.footer {
+	background-color: #141414;
+	margin-top: 90px;
+}
+
+.footer-root {
+	border-bottom: 1px solid #4D4D4D;
+	padding-bottom: 62px; 
+	padding-top: 93px;
+	display: flex;
+	align-items: flex-end;
+	column-gap: 15.04px;
+}
+
+.footer-root__reserved p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #666666;
+}
+
+.footer-nav {
+	display: flex;
+}
+
+.footer-nav__list-1 {
+	margin-right: 92px;
+	margin-top: 60px;
+	padding-bottom: 95px;
+}
+
+.footer-nav__list-1__col li:nth-child(4) {
+	margin-top: 70px;
+}
+
+.footer-nav__list-1__col li:nth-child(2) {
+	margin-top: 20px;
+}
+
+.footer-nav__list-1__col li:nth-child(3) {
+	margin-top: 15px;
+}
+
+.footer-nav__list-1__col li:nth-child(5) {
+	margin-top: 20px;
+}
+
+.footer-nav__list-1__col li:nth-child(6) {
+	margin-top: 10px;
+}
+
+.footer-nav__list-1__col li:nth-child(7) {
+	margin-top: 10px;
+}
+
+.list-1__item__h {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #666666;
+}
+
+.list-1__item {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
+
+.footer-nav__list-2 {
+	margin-top: 92px;
+	margin-right: 122px;
+}
+
+.footer-nav__list-2__col {
+
+}
+
+.footer-nav__list-2__col li:nth-child(2) {
+	margin-top: 15px;
+}
+
+.footer-nav__list-2__col li:nth-child(3) {
+	margin-top: 90px;
+}
+
+.footer-nav__list-2__col li:nth-child(4) {
+	margin-top: 20px;
+}
+
+.footer-nav__list-2__col li:nth-child(5) {
+	margin-top: 10px;
+}
+
+.footer-nav__list-2__col li:nth-child(6) {
+	margin-top: 10px;
+}
+
+.list-2__item {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
+
+.list-2__item__h {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #666666;
+}
+
+.footer-nav__list-3 {
+	margin-top: 92px;
+	margin-right: 116px;
+}
+
+.footer-nav__list-3__col li:nth-child(2) {
+	margin-top: 15px;
+}
+
+.footer-nav__list-3__col li:nth-child(3) {
+	margin-top: 90px;
+}
+
+.footer-nav__list-3__col li:nth-child(4) {
+	margin-top: 20px;
+}
+
+.footer-nav__list-3__col li:nth-child(5) {
+	margin-top: 10px;
+	width: 147px;
+}
+
+.list-3__item {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
+
+.list-3__item__h {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #666666;
+}
+
+.footer-nav__list-4 {
+	margin-top: 92px;
+	margin-right: 114px;
+}
+
+.footer-nav__list-4__col li:nth-child(2) {
+	margin-top: 15px;
+	width: 111px;
+}
+.list-4__item {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
+
+.footer-form {
+	margin-top: 60px;
+	padding-bottom: ;
+}
+
+.footer-form__title p {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #666666;
+}
+
+.footer-form__input {
+	margin-top: 20px;
+	display: flex;
+}
+
+.footer-form__input__inner {
+	width: 221px;
+	height: 48px;
+	padding: 18px 23px 18px 24px;
+}
+
+.footer-form__input__inner::placeholder {
+	opacity: 1;  
+	transition: opacity 0.3s ease;
+}
+
+.footer-form__input__inner:focus::placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+::placeholder {
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #666666;
+}
+
+.footer-form__input__button {
+	background: #000000;
+	padding: 18px 24px;
+	height: 48px;
+	width: 79px;
+}
+
+.footer-form__input__button span{
+	font-family: 'Libre Franklin';
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	position: relative;
+	bottom: 18px;
+}
+
+
+
+
+
+
+
+
+
